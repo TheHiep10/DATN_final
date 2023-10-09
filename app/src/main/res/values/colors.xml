@@ -27,6 +27,7 @@
     <color name="no">#00FF0000</color>
     <color name="trackActive">#A073FF</color>
     <color name="trackInactive">#D9D9D9</color>
+    <color name="cool">#D700C1</color>
 
 
     <color name="primary">#1B023B</color>

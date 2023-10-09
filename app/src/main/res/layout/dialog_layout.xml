@@ -87,7 +87,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@drawable/dialog_btn_background"
-            android:text="Hủy thay đổi"
+            android:text="Hủy "
             android:textColor="#EFF5F5"
             android:textSize="18sp" />
 
@@ -98,7 +98,7 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:background="@drawable/dialog_btn_background"
-            android:text="Xác nhận thay đổi"
+            android:text="Xác nhận "
             android:textColor="#EFF5F5"
             android:textSize="18sp" />
     </LinearLayout>

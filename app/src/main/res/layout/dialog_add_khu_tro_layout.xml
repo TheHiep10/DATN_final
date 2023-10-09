@@ -127,15 +127,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    <ImageButton
-        android:id="@+id/img_btn_xac_nhan_tt"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="40dp"
-        android:background="@null"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_dia_chi"
-        app:srcCompat="@drawable/btn_xac_nhan_va_tiep_tuc" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_dia_chi">
+
+        <ImageButton
+            android:id="@+id/img_btn_huy"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btn_huy_add" />
+
+        <ImageButton
+            android:id="@+id/img_btn_xac_nhan"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btn_xac_nhan_add" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

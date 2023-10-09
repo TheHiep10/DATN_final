@@ -9,17 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
-
-        <com.example.afinal.custom_textView.RobotoMediumTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Setting"
-            android:layout_centerInParent="true"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-    </RelativeLayout>
+        android:layout_marginTop="10dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
