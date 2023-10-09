@@ -71,6 +71,11 @@ public class fragmentHome extends Fragment {
                 final Dialog dialog = new Dialog(getActivity());
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 dialog.setContentView(R.layout.dialog_add_khu_tro_layout);
+                EditText edtMaThietBi = dialog.findViewById(R.id.edit_text_ma_thiet_bi);
+                EditText edtTenKhuTro = dialog.findViewById(R.id.edit_text_ten_khu_tro);
+                EditText edtDiaChi = dialog.findViewById(R.id.edit_text_dia_chi);
+                ImageButton imgBtnXacNhan = dialog.findViewById(R.id.img_btn_xac_nhan);
+                ImageButton imgBtnHuy = dialog.findViewById(R.id.img_btn_huy);
 
                 Window window = dialog.getWindow();
                 if (window == null)
@@ -94,11 +99,6 @@ public class fragmentHome extends Fragment {
                     dialog.setCancelable(false);
                 }
 
-                EditText edtMaThietBi = dialog.findViewById(R.id.edit_text_ma_thiet_bi);
-                EditText edtTenKhuTro = dialog.findViewById(R.id.edit_text_ten_khu_tro);
-                EditText edtDiaChi = dialog.findViewById(R.id.edit_text_dia_chi);
-                ImageButton imgBtnXacNhan = dialog.findViewById(R.id.img_btn_xac_nhan_tt);
-
                 imgBtnXacNhan.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -121,14 +121,21 @@ public class fragmentHome extends Fragment {
                             ma_thiet_bi = edtMaThietBi.getText().toString().trim();
                             ten_khu_tro = edtTenKhuTro.getText().toString().trim();
                             dia_chi = edtDiaChi.getText().toString().trim();
-
                             lv.setAdapter(khu_tro_arr_adapter);
                             khu_tro_list.add(new them_khu_tro(R.drawable.background_home_1, R.drawable.icon_home_map, R.drawable.icon_smart_lock, R.drawable.icon_connected, ten_khu_tro, dia_chi, "Đã kết nối", ma_thiet_bi));
                             dialog.dismiss();
                         }
                     }
                 });
-
+                imgBtnHuy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        edtDiaChi.getText().clear();
+                        edtMaThietBi.getText().clear();
+                        edtTenKhuTro.getText().clear();
+                        dialog.dismiss();
+                    }
+                });
                 dialog.show();
             }
         });
@@ -156,58 +163,5 @@ public class fragmentHome extends Fragment {
                 });
             }
         });
-    }
-
-    private void openAddKhuTroDialog(int gravity)
-    {
-        final Dialog dialog = new Dialog(getActivity());
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.dialog_add_khu_tro_layout);
-
-        Window window = dialog.getWindow();
-        if (window == null)
-        {
-            return;
-        }
-
-        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
-        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-        WindowManager.LayoutParams windowAttributes = window.getAttributes();
-        windowAttributes.gravity = gravity;
-        window.setAttributes(windowAttributes);
-
-        if (Gravity.CENTER == gravity)
-        {
-            dialog.setCancelable(true);
-        }
-        else
-        {
-            dialog.setCancelable(false);
-        }
-
-        EditText edtMaThietBi = dialog.findViewById(R.id.edit_text_ma_thiet_bi);
-        EditText edtTenKhuTro = dialog.findViewById(R.id.edit_text_ten_khu_tro);
-        EditText edtDiaChi = dialog.findViewById(R.id.edit_text_dia_chi);
-        ImageButton imgBtnXacNhan = dialog.findViewById(R.id.img_btn_xac_nhan_tt);
-
-        imgBtnXacNhan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String ma_thiet_bi, ten_khu_tro, dia_chi;
-
-                ma_thiet_bi = edtMaThietBi.getText().toString();
-                ten_khu_tro = edtTenKhuTro.getText().toString();
-                dia_chi = edtDiaChi.getText().toString();
-
-                ArrayList<them_khu_tro> khu_tro_list = new ArrayList<>();
-                them_khu_tro_arr_adapter khu_tro_arr_adapter = new them_khu_tro_arr_adapter(fragmentHome.this, R.layout.layout_them_khu_tro, khu_tro_list);
-                lv.setAdapter(khu_tro_arr_adapter);
-                khu_tro_list.add(new them_khu_tro(R.drawable.background_home_1, R.drawable.icon_home_map, R.drawable.icon_smart_lock, R.drawable.icon_connected, ten_khu_tro, dia_chi, "Đã kết nối", ma_thiet_bi));
-                dialog.dismiss();
-            }
-        });
-
-        dialog.show();
     }
 }

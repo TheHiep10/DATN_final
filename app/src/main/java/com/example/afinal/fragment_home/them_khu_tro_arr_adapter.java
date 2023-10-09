@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 public class them_khu_tro_arr_adapter extends ArrayAdapter<them_khu_tro>
 {
-    private static final int resource = R.layout.layout_them_khu_tro;
     Fragment context;
     int id_layout;
     ArrayList<them_khu_tro> khu_tro_list;
