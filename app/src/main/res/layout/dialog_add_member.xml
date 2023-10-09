@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
+
     <com.example.afinal.custom_textView.RobotoBlackTextView
         android:id="@+id/header_add_member"
         android:layout_width="match_parent"
@@ -18,7 +20,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="5dp">
 
         <TextView
             android:id="@+id/textname"
@@ -44,7 +46,6 @@
             android:paddingLeft="30dp"
             android:paddingBottom="10dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/textname"
             android:textSize="16sp" />
 
         <TextView
@@ -57,7 +58,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="10dp"/>
 
         <EditText
             android:id="@+id/txtdate"
@@ -65,14 +66,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textdate"
             android:layout_marginTop="5dp"
-            android:layout_marginStart="10dp"
             android:background="@drawable/text_name"
             android:hint="Ngày sinh"
             android:inputType="datetime"
             android:paddingLeft="30dp"
             android:paddingBottom="10dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/textname"
             android:textSize="16sp" />
 
         <RadioGroup
@@ -90,7 +89,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nam"
-                android:checked="true"
                 android:buttonTint="@color/checkbox"/>
 
             <RadioButton
@@ -113,7 +111,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="10dp"/>
 
         <EditText
             android:id="@+id/txtaddress"
@@ -128,7 +126,6 @@
             android:paddingLeft="30dp"
             android:paddingBottom="10dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/textname"
             android:textSize="16sp" />
 
         <TextView
@@ -141,7 +138,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="10dp"/>
 
         <EditText
             android:id="@+id/txtnumber"
@@ -156,7 +153,6 @@
             android:paddingLeft="30dp"
             android:paddingBottom="10dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/textname"
             android:textSize="16sp" />
 
         <TextView
@@ -169,7 +165,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="10dp"/>
 
         <EditText
             android:id="@+id/txtdatestart"
@@ -184,7 +180,6 @@
             android:paddingLeft="30dp"
             android:paddingBottom="10dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/textname"
             android:textSize="16sp" />
 
         <Button

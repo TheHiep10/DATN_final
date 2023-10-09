@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_centerHorizontal="true">
 
     <ImageView
-        android:id="@+id/info_member"
+        android:id="@+id/imageview_member"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_info_member"
+        android:background="@drawable/background_home_1"
         android:layout_centerHorizontal="true"
         android:padding="10dp"/>
 
@@ -18,20 +20,30 @@
         android:background="@drawable/icon_home"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="35dp"
-        android:layout_alignLeft="@+id/info_member"
-        android:layout_alignTop="@+id/info_member" />
+        android:layout_alignLeft="@+id/imageview_member"
+        android:layout_alignTop="@+id/imageview_member" />
 
     <com.example.afinal.custom_textView.RobotoBlackTextView
         android:id="@+id/name_member"
-        android:layout_width="wrap_content"
+        android:layout_width="117dp"
         android:layout_height="wrap_content"
-        android:text="Đỗ Thế Hiệp"
-        android:textStyle="bold"
-        android:textSize="20sp"
+        android:layout_alignTop="@+id/imageview_member"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:layout_toEndOf="@+id/icon"
-        android:layout_alignTop="@+id/info_member" />
+        android:text="Đỗ Thế Hiệp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageview_member"
+        android:layout_marginTop="25dp"
+        android:layout_alignEnd="@+id/imageview_member"
+        android:layout_marginEnd="40dp"/>
+
 
     <com.example.afinal.custom_textView.RobotoMediumTextView
         android:id="@+id/texttime"

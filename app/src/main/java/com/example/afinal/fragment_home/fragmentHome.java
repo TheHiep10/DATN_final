@@ -126,7 +126,6 @@ public class fragmentHome extends Fragment {
                             khu_tro_list.add(new them_khu_tro(R.drawable.background_home_1, R.drawable.icon_home_map, R.drawable.icon_smart_lock, R.drawable.icon_connected, ten_khu_tro, dia_chi, "Đã kết nối", ma_thiet_bi));
                             dialog.dismiss();
                         }
-//                        dialog.dismiss();
                     }
                 });
 

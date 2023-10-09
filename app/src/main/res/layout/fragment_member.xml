@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".room.memberFragment">
+    tools:context=".room.member.memberFragment">
 
     <RelativeLayout
         android:id="@+id/header_member"
@@ -14,9 +14,7 @@
             android:id="@+id/list_member"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-
-        </ListView>
+            android:layout_marginTop="10dp" />
 
         <ImageButton
             android:id="@+id/btn_add_member"
