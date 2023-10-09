@@ -11,8 +11,6 @@ import com.example.afinal.R;
 
 public class fragmentHistory extends Fragment {
 
-    private View mView;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

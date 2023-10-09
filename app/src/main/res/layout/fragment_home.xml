@@ -9,8 +9,8 @@
 
     <ListView
         android:id="@+id/lv_khu_tro"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:layout_width="320dp"
+        android:layout_height="380dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
@@ -196,6 +196,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lv_khu_tro"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.02" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

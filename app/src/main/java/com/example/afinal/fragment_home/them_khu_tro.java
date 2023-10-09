@@ -1,6 +1,6 @@
 package com.example.afinal.fragment_home;
 
-public class khu_tro {
+public class them_khu_tro {
     private int img_background, img_icon_map, img_icon_smart_lock, img_icon_connected;
     private String tv_ten_khu_tro, tv_address, tv_connected, tv_device;
 
@@ -70,7 +70,7 @@ public class khu_tro {
 
     /* Constructor */
 
-    public khu_tro(int img_background, int img_icon_map, int img_icon_smart_lock, int img_icon_connected, String tv_ten_khu_tro, String tv_address, String tv_connected, String tv_device) {
+    public them_khu_tro(int img_background, int img_icon_map, int img_icon_smart_lock, int img_icon_connected, String tv_ten_khu_tro, String tv_address, String tv_connected, String tv_device) {
         this.img_background = img_background;
         this.img_icon_map = img_icon_map;
         this.img_icon_smart_lock = img_icon_smart_lock;

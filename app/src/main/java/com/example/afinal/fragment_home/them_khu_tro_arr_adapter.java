@@ -15,15 +15,15 @@ import com.example.afinal.R;
 
 import java.util.ArrayList;
 
-public class Khu_tro_arr_adapter extends ArrayAdapter<khu_tro>
+public class them_khu_tro_arr_adapter extends ArrayAdapter<them_khu_tro>
 {
-    private static final int resource = R.layout.layout_khu_tro;
+    private static final int resource = R.layout.layout_them_khu_tro;
     Fragment context;
     int id_layout;
-    ArrayList<khu_tro> khu_tro_list;
+    ArrayList<them_khu_tro> khu_tro_list;
     /* Tao constructor cho fragmentHome */
 
-    public Khu_tro_arr_adapter(Fragment context, int id_layout, ArrayList<khu_tro> khu_tro_list) {
+    public them_khu_tro_arr_adapter(Fragment context, int id_layout, ArrayList<them_khu_tro> khu_tro_list) {
         super(context.getContext(), id_layout, khu_tro_list);
         this.context = context;
         this.id_layout = id_layout;
@@ -39,7 +39,7 @@ public class Khu_tro_arr_adapter extends ArrayAdapter<khu_tro>
         // Dat id layout len de
         convertView = mInflater.inflate(id_layout, null);
         // lay 1 phan tu trong mang
-        khu_tro mKhuTro = khu_tro_list.get(position);
+        them_khu_tro mKhuTro = khu_tro_list.get(position);
         // khai bao, tham chieu ID va hien thi len ImageView
         ImageView img_background = convertView.findViewById(R.id.imgView_background);
         img_background.setImageResource(mKhuTro.getImg_background());
