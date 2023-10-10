@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="11">
+      <module name="DATN_final.FInal.app" target="17" />
       <module name="Electronic-device-control-application-main.FInal.app" target="17" />
     </bytecodeTargetLevel>
   </component>
