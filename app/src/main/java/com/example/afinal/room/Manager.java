@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+
 import com.example.afinal.R;
 import com.example.afinal.room.member.memberFragment;
 import com.google.android.material.tabs.TabLayout;
@@ -29,5 +30,6 @@ public class Manager extends AppCompatActivity {
 
         mViewPager.setAdapter(viewPagerManager);
         mTableLayout.setupWithViewPager(mViewPager);
+
     }
 }
