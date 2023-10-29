@@ -3,8 +3,16 @@ package com.example.afinal.room.member;
 import android.widget.ImageView;
 
 public class add_member {
-    private int imageView_sex;
-    private String name_member, starttime, textphone;
+    private int imageView_gender;
+    private String name_member, gender_member, starttime_member, phone_member;
+
+    public int getImageView_gender() {
+        return imageView_gender;
+    }
+
+    public void setImageView_gender(int imageView_gender) {
+        this.imageView_gender = imageView_gender;
+    }
 
     public String getName_member() {
         return name_member;
@@ -14,34 +22,41 @@ public class add_member {
         this.name_member = name_member;
     }
 
-    public int getImageView() {
-        return imageView_sex;
+    public String getStarttime_member() {
+        return starttime_member;
     }
 
-    public void setImageView(int imageView) {
-        imageView_sex = imageView;
+    public void setStarttime_member(String starttime_member) {
+        this.starttime_member = starttime_member;
     }
 
-    public String getStarttime() {
-        return starttime;
+    public String getPhone_member() {
+        return phone_member;
     }
 
-    public void setStarttime(String starttime) {
-        this.starttime = starttime;
+    public void setPhone_member(String phone_member) {
+        this.phone_member = phone_member;
     }
 
-    public String getTextphone() {
-        return textphone;
+    public String getGender_member() {
+        return gender_member;
     }
 
-    public void setTextphone(String textphone) {
-        this.textphone = textphone;
+    public void setGender_member(String gender_member) {
+        this.gender_member = gender_member;
     }
 
-    public add_member(int imageView_sex, String name_member, String starttime, String textphone) {
-        this.imageView_sex = imageView_sex;
+    public add_member(int imageView_gender, String name_member, String starttime_member, String phone_member) {
+        this.imageView_gender = imageView_gender;
         this.name_member = name_member;
-        this.starttime = starttime;
-        this.textphone = textphone;
+        this.starttime_member = starttime_member;
+        this.phone_member = phone_member;
+    }
+
+    public add_member(String name_member, String gender_member, String starttime_member, String phone_member) {
+        this.name_member = name_member;
+        this.gender_member = gender_member;
+        this.starttime_member = starttime_member;
+        this.phone_member = phone_member;
     }
 }

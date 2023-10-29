@@ -15,21 +15,43 @@
         android:theme="@style/Theme.FInal"
         tools:targetApi="31">
         <activity
+            android:name=".room.member.UploadMember"
+            android:exported="false"
+            android:label="@string/title_activity_upload_member"
+            android:theme="@style/Theme.FInal" />
+        <activity
             android:name=".login.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:parentActivityName=".login.SignInActivity" android:name=".MainActivity"/>
-        <activity android:parentActivityName=".login.SignInActivity" android:name=".login.forgotPassWord" />
-        <activity android:parentActivityName=".login.SignInActivity" android:name=".login.SignUp1Activity" />
-        <activity android:parentActivityName=".login.SignInActivity"  android:name=".login.SignUp2Activity" />
-        <activity android:parentActivityName=".login.SignInActivity" android:name=".login.SignUp3Activity" />
-        <activity android:parentActivityName=".login.SignInActivity" android:name=".login.verifyOTP" />
-        <activity android:parentActivityName=".login.SignInActivity" android:name=".login.resetPassword" />
-        <activity android:parentActivityName=".login.SignInActivity" android:name=".login.VerifyOTPActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".login.SignInActivity" />
+        <activity
+            android:name=".login.forgotPassWord"
+            android:parentActivityName=".login.SignInActivity" />
+        <activity
+            android:name=".login.SignUp1Activity"
+            android:parentActivityName=".login.SignInActivity" />
+        <activity
+            android:name=".login.SignUp2Activity"
+            android:parentActivityName=".login.SignInActivity" />
+        <activity
+            android:name=".login.SignUp3Activity"
+            android:parentActivityName=".login.SignInActivity" />
+        <activity
+            android:name=".login.verifyOTP"
+            android:parentActivityName=".login.SignInActivity" />
+        <activity
+            android:name=".login.resetPassword"
+            android:parentActivityName=".login.SignInActivity" />
+        <activity
+            android:name=".login.VerifyOTPActivity"
+            android:parentActivityName=".login.SignInActivity" />
     </application>
 
 </manifest>
