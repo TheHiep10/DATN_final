@@ -15,12 +15,19 @@
         android:theme="@style/Theme.FInal"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".room.member.UploadMember"
             android:exported="false"
             android:label="@string/title_activity_upload_member"
             android:theme="@style/Theme.FInal" />
         <activity
             android:name=".login.SignInActivity"
+=======
+            android:name=".room.member.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".room.Manager"
+>>>>>>> f2e3af9c50be61e813fddff6365f4e97a4aa2562
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
