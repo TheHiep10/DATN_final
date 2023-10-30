@@ -34,12 +34,12 @@ com.example.afinal.app-lifecycle-viewmodel-savedstate-2.5.1-32 C:\Users\PC\.grad
 com.example.afinal.app-customview-poolingcontainer-1.0.0-33 C:\Users\PC\.gradle\caches\transforms-3\df477f63a5fbb4b3324ca57557dadf68\transformed\customview-poolingcontainer-1.0.0\res
 com.example.afinal.app-emoji2-1.2.0-34 C:\Users\PC\.gradle\caches\transforms-3\f5eb16e9a1087ca5969ba943d6938600\transformed\emoji2-1.2.0\res
 com.example.afinal.app-cardview-1.0.0-35 C:\Users\PC\.gradle\caches\transforms-3\ff3d3718c49a76603dbf6b4c00e77203\transformed\cardview-1.0.0\res
-com.example.afinal.app-google-services-36 C:\Users\PC\Desktop\New folder\DATN_final\app\build\generated\res\google-services\debug
-com.example.afinal.app-pngs-37 C:\Users\PC\Desktop\New folder\DATN_final\app\build\generated\res\pngs\debug
-com.example.afinal.app-resValues-38 C:\Users\PC\Desktop\New folder\DATN_final\app\build\generated\res\resValues\debug
-com.example.afinal.app-rs-39 C:\Users\PC\Desktop\New folder\DATN_final\app\build\generated\res\rs\debug
-com.example.afinal.app-packageDebugResources-40 C:\Users\PC\Desktop\New folder\DATN_final\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.afinal.app-packageDebugResources-41 C:\Users\PC\Desktop\New folder\DATN_final\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.afinal.app-merged_res-42 C:\Users\PC\Desktop\New folder\DATN_final\app\build\intermediates\merged_res\debug
-com.example.afinal.app-debug-43 C:\Users\PC\Desktop\New folder\DATN_final\app\src\debug\res
-com.example.afinal.app-main-44 C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\res
+com.example.afinal.app-google-services-36 C:\Users\PC\Desktop\DATN_final\app\build\generated\res\google-services\debug
+com.example.afinal.app-pngs-37 C:\Users\PC\Desktop\DATN_final\app\build\generated\res\pngs\debug
+com.example.afinal.app-resValues-38 C:\Users\PC\Desktop\DATN_final\app\build\generated\res\resValues\debug
+com.example.afinal.app-rs-39 C:\Users\PC\Desktop\DATN_final\app\build\generated\res\rs\debug
+com.example.afinal.app-packageDebugResources-40 C:\Users\PC\Desktop\DATN_final\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.afinal.app-packageDebugResources-41 C:\Users\PC\Desktop\DATN_final\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.afinal.app-merged_res-42 C:\Users\PC\Desktop\DATN_final\app\build\intermediates\merged_res\debug
+com.example.afinal.app-debug-43 C:\Users\PC\Desktop\DATN_final\app\src\debug\res
+com.example.afinal.app-main-44 C:\Users\PC\Desktop\DATN_final\app\src\main\res
