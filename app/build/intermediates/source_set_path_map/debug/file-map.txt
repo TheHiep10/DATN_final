@@ -1,0 +1,45 @@
+com.example.afinal.app-recyclerview-1.3.2-0 C:\Users\PC\.gradle\caches\transforms-3\010a2c44769d82916db8c4e1a94c0246\transformed\recyclerview-1.3.2\res
+com.example.afinal.app-paging-rxjava3-3.0.0-1 C:\Users\PC\.gradle\caches\transforms-3\0d381216787b1fb0e04bba9fa479381d\transformed\paging-rxjava3-3.0.0\res
+com.example.afinal.app-lifecycle-viewmodel-2.5.1-2 C:\Users\PC\.gradle\caches\transforms-3\0ec05b099d9673002924f8f9175f8fc5\transformed\lifecycle-viewmodel-2.5.1\res
+com.example.afinal.app-activity-1.5.1-3 C:\Users\PC\.gradle\caches\transforms-3\2476385f337e91a4faa2bb27ebcde4e6\transformed\activity-1.5.1\res
+com.example.afinal.app-lifecycle-livedata-core-2.5.1-4 C:\Users\PC\.gradle\caches\transforms-3\2488ba1611e8ad94cfdb96ba92e794fe\transformed\lifecycle-livedata-core-2.5.1\res
+com.example.afinal.app-lifecycle-runtime-2.5.1-5 C:\Users\PC\.gradle\caches\transforms-3\2559c8f756d84506d20e60cea54d2a92\transformed\lifecycle-runtime-2.5.1\res
+com.example.afinal.app-appcompat-1.5.1-6 C:\Users\PC\.gradle\caches\transforms-3\2b088ae123cbecc8a7f8885abb9c03bf\transformed\appcompat-1.5.1\res
+com.example.afinal.app-material-1.7.0-7 C:\Users\PC\.gradle\caches\transforms-3\345b546f085861901f22f0a7f831336a\transformed\material-1.7.0\res
+com.example.afinal.app-drawerlayout-1.1.1-8 C:\Users\PC\.gradle\caches\transforms-3\3501dd27a957fe7dd4b3ace489991f07\transformed\drawerlayout-1.1.1\res
+com.example.afinal.app-media-1.0.0-9 C:\Users\PC\.gradle\caches\transforms-3\573265119c5225973fce0a343290c049\transformed\media-1.0.0\res
+com.example.afinal.app-browser-1.4.0-10 C:\Users\PC\.gradle\caches\transforms-3\6063ce9e4c5a2bafec5fe3af169f5379\transformed\browser-1.4.0\res
+com.example.afinal.app-core-ktx-1.8.0-11 C:\Users\PC\.gradle\caches\transforms-3\6c4c7c92d025a085c14f0ecaf670c28d\transformed\core-ktx-1.8.0\res
+com.example.afinal.app-circularSeekBar-1.3.2-12 C:\Users\PC\.gradle\caches\transforms-3\700c6e70cc9150984b55366135c921ee\transformed\circularSeekBar-1.3.2\res
+com.example.afinal.app-play-services-basement-18.1.0-13 C:\Users\PC\.gradle\caches\transforms-3\72fcf531b54babd6b3a8cb40d82ecf2f\transformed\play-services-basement-18.1.0\res
+com.example.afinal.app-emoji2-views-helper-1.2.0-14 C:\Users\PC\.gradle\caches\transforms-3\797c22357e7ad202fc365355b33b3ec9\transformed\emoji2-views-helper-1.2.0\res
+com.example.afinal.app-fragment-1.3.6-15 C:\Users\PC\.gradle\caches\transforms-3\7b804979186623ec1e346fe7eee905d1\transformed\fragment-1.3.6\res
+com.example.afinal.app-glide-4.14.2-16 C:\Users\PC\.gradle\caches\transforms-3\8a17eecac7922c436648230801d2748f\transformed\glide-4.14.2\res
+com.example.afinal.app-annotation-experimental-1.3.0-17 C:\Users\PC\.gradle\caches\transforms-3\8bf0933e27d1e74b39732ca97edd0f41\transformed\annotation-experimental-1.3.0\res
+com.example.afinal.app-constraintlayout-2.1.4-18 C:\Users\PC\.gradle\caches\transforms-3\962755fc6f250e37f941acc142533393\transformed\constraintlayout-2.1.4\res
+com.example.afinal.app-viewpager2-1.1.0-beta02-19 C:\Users\PC\.gradle\caches\transforms-3\96e2d8696b35b50d001770224d4627d7\transformed\viewpager2-1.1.0-beta02\res
+com.example.afinal.app-firebase-common-20.3.2-20 C:\Users\PC\.gradle\caches\transforms-3\991d890c02177899d796d3d6a9316807\transformed\firebase-common-20.3.2\res
+com.example.afinal.app-play-services-base-18.1.0-21 C:\Users\PC\.gradle\caches\transforms-3\9f966c7cff868169119333b81f8697d1\transformed\play-services-base-18.1.0\res
+com.example.afinal.app-startup-runtime-1.1.1-22 C:\Users\PC\.gradle\caches\transforms-3\a616554d25fd30570c60ebe3538d8b87\transformed\startup-runtime-1.1.1\res
+com.example.afinal.app-ccp-2.5.0-23 C:\Users\PC\.gradle\caches\transforms-3\a7b0821424a5e73d5d6226ef3236ec4b\transformed\ccp-2.5.0\res
+com.example.afinal.app-transition-1.2.0-24 C:\Users\PC\.gradle\caches\transforms-3\a9cb2fd4ea882ba568e8a151c84680fb\transformed\transition-1.2.0\res
+com.example.afinal.app-pinview-1.4.4-25 C:\Users\PC\.gradle\caches\transforms-3\b4def8e3d03ab6c6c22d773b4b97e72d\transformed\pinview-1.4.4\res
+com.example.afinal.app-play-services-maps-17.0.1-26 C:\Users\PC\.gradle\caches\transforms-3\b601c37c7b43417ecfc92ad8a9d49eda\transformed\play-services-maps-17.0.1\res
+com.example.afinal.app-core-1.8.0-27 C:\Users\PC\.gradle\caches\transforms-3\bd9779678ad19002f85fc23cc6b7de13\transformed\core-1.8.0\res
+com.example.afinal.app-appcompat-resources-1.5.1-28 C:\Users\PC\.gradle\caches\transforms-3\bf752de70ef4b1ab37dd16fe14c9278d\transformed\appcompat-resources-1.5.1\res
+com.example.afinal.app-coordinatorlayout-1.1.0-29 C:\Users\PC\.gradle\caches\transforms-3\bfe9e30d91696a33d0f6ddc78c179f1f\transformed\coordinatorlayout-1.1.0\res
+com.example.afinal.app-lifecycle-process-2.4.1-30 C:\Users\PC\.gradle\caches\transforms-3\d284873d669334d9f2028e6254c5e7df\transformed\lifecycle-process-2.4.1\res
+com.example.afinal.app-savedstate-1.2.0-31 C:\Users\PC\.gradle\caches\transforms-3\d33cad4bad38e478484407d51cb96c08\transformed\savedstate-1.2.0\res
+com.example.afinal.app-lifecycle-viewmodel-savedstate-2.5.1-32 C:\Users\PC\.gradle\caches\transforms-3\d3f33719f8b76970e9139590823fc3e6\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.example.afinal.app-customview-poolingcontainer-1.0.0-33 C:\Users\PC\.gradle\caches\transforms-3\df477f63a5fbb4b3324ca57557dadf68\transformed\customview-poolingcontainer-1.0.0\res
+com.example.afinal.app-emoji2-1.2.0-34 C:\Users\PC\.gradle\caches\transforms-3\f5eb16e9a1087ca5969ba943d6938600\transformed\emoji2-1.2.0\res
+com.example.afinal.app-cardview-1.0.0-35 C:\Users\PC\.gradle\caches\transforms-3\ff3d3718c49a76603dbf6b4c00e77203\transformed\cardview-1.0.0\res
+com.example.afinal.app-google-services-36 C:\Users\PC\Desktop\New folder\DATN_final\app\build\generated\res\google-services\debug
+com.example.afinal.app-pngs-37 C:\Users\PC\Desktop\New folder\DATN_final\app\build\generated\res\pngs\debug
+com.example.afinal.app-resValues-38 C:\Users\PC\Desktop\New folder\DATN_final\app\build\generated\res\resValues\debug
+com.example.afinal.app-rs-39 C:\Users\PC\Desktop\New folder\DATN_final\app\build\generated\res\rs\debug
+com.example.afinal.app-packageDebugResources-40 C:\Users\PC\Desktop\New folder\DATN_final\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.afinal.app-packageDebugResources-41 C:\Users\PC\Desktop\New folder\DATN_final\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.afinal.app-merged_res-42 C:\Users\PC\Desktop\New folder\DATN_final\app\build\intermediates\merged_res\debug
+com.example.afinal.app-debug-43 C:\Users\PC\Desktop\New folder\DATN_final\app\src\debug\res
+com.example.afinal.app-main-44 C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\res
