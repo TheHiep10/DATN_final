@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.hbb20:ccp:2.5.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0882958ccb8bc20d3000dadcde29c0fe/transformed/ccp-2.5.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0882958ccb8bc20d3000dadcde29c0fe/transformed/ccp-2.5.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0882958ccb8bc20d3000dadcde29c0fe/transformed/ccp-2.5.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7b0821424a5e73d5d6226ef3236ec4b/transformed/ccp-2.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7b0821424a5e73d5d6226ef3236ec4b/transformed/ccp-2.5.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a7b0821424a5e73d5d6226ef3236ec4b/transformed/ccp-2.5.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hbb20/ccp/2.5.0/9d557eec12c9e205a89bb063fc1ae6adfb92704/ccp-2.5.0-javadoc.jar!/" />
