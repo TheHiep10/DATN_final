@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/fragment_setting.xml",
+        "source": "com.example.afinal.app-main-44:/layout/fragment_setting.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/custom_progressbar.xml",
+        "source": "com.example.afinal.app-main-44:/layout/custom_progressbar.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/dialog_layout.xml",
+        "source": "com.example.afinal.app-main-44:/layout/dialog_layout.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/activity_sign_up3.xml",
+        "source": "com.example.afinal.app-main-44:/layout/activity_sign_up3.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/forgot_password.xml",
+        "source": "com.example.afinal.app-main-44:/layout/forgot_password.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/fragment_home.xml",
+        "source": "com.example.afinal.app-main-44:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/reset_password.xml",
+        "source": "com.example.afinal.app-main-44:/layout/reset_password.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/activity_sign_up1.xml",
+        "source": "com.example.afinal.app-main-44:/layout/activity_sign_up1.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/layout_lich_su_truy_cap.xml",
+        "source": "com.example.afinal.app-main-44:/layout/layout_lich_su_truy_cap.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/custom_notification_layout.xml",
+        "source": "com.example.afinal.app-main-44:/layout/custom_notification_layout.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/custom_tab.xml",
+        "source": "com.example.afinal.app-main-44:/layout/custom_tab.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/custom_text_checkbox.xml",
+        "source": "com.example.afinal.app-main-44:/layout/custom_text_checkbox.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/progress_layout.xml",
+        "source": "com.example.afinal.app-main-44:/layout/progress_layout.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/infomation_member.xml",
+        "source": "com.example.afinal.app-main-44:/layout/infomation_member.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/activity_main.xml",
+        "source": "com.example.afinal.app-main-44:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/enter_otp_code.xml",
+        "source": "com.example.afinal.app-main-44:/layout/enter_otp_code.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/dialog_add_khu_tro_layout.xml",
+        "source": "com.example.afinal.app-main-44:/layout/dialog_add_khu_tro_layout.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/activity_maps.xml",
+        "source": "com.example.afinal.app-main-44:/layout/activity_maps.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/layout_them_khu_tro.xml",
+        "source": "com.example.afinal.app-main-44:/layout/layout_them_khu_tro.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/dialog_add_member.xml",
+        "source": "com.example.afinal.app-main-44:/layout/dialog_add_member.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/activity_detail.xml",
+        "source": "com.example.afinal.app-main-44:/layout/activity_detail.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/activity_sign_up2.xml",
+        "source": "com.example.afinal.app-main-44:/layout/activity_sign_up2.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/fragment_lich_su.xml",
+        "source": "com.example.afinal.app-main-44:/layout/fragment_lich_su.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/activity_manager.xml",
+        "source": "com.example.afinal.app-main-44:/layout/activity_manager.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/update_member.xml",
+        "source": "com.example.afinal.app-main-44:/layout/update_member.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/activity_login.xml",
+        "source": "com.example.afinal.app-main-44:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/verify_otp.xml",
+        "source": "com.example.afinal.app-main-44:/layout/verify_otp.xml"
+    }
+]
