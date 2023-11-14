@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.afinal.R;
@@ -18,13 +18,10 @@ import java.lang.String;
 
 public final class LayoutThemKhuTroBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CardView rootView;
 
   @NonNull
   public final ImageView imgViewBackground;
-
-  @NonNull
-  public final ImageView imgViewIconConnected;
 
   @NonNull
   public final ImageView imgViewIconMap;
@@ -33,36 +30,38 @@ public final class LayoutThemKhuTroBinding implements ViewBinding {
   public final ImageView imgViewIconSmartLock;
 
   @NonNull
-  public final TextView tvAddress;
+  public final ImageView imgViewIconStatus;
 
   @NonNull
-  public final TextView tvConnected;
+  public final TextView tvAddress;
 
   @NonNull
   public final TextView tvDevice;
 
   @NonNull
+  public final TextView tvStatus;
+
+  @NonNull
   public final TextView tvTenKhuTro;
 
-  private LayoutThemKhuTroBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView imgViewBackground, @NonNull ImageView imgViewIconConnected,
+  private LayoutThemKhuTroBinding(@NonNull CardView rootView, @NonNull ImageView imgViewBackground,
       @NonNull ImageView imgViewIconMap, @NonNull ImageView imgViewIconSmartLock,
-      @NonNull TextView tvAddress, @NonNull TextView tvConnected, @NonNull TextView tvDevice,
-      @NonNull TextView tvTenKhuTro) {
+      @NonNull ImageView imgViewIconStatus, @NonNull TextView tvAddress, @NonNull TextView tvDevice,
+      @NonNull TextView tvStatus, @NonNull TextView tvTenKhuTro) {
     this.rootView = rootView;
     this.imgViewBackground = imgViewBackground;
-    this.imgViewIconConnected = imgViewIconConnected;
     this.imgViewIconMap = imgViewIconMap;
     this.imgViewIconSmartLock = imgViewIconSmartLock;
+    this.imgViewIconStatus = imgViewIconStatus;
     this.tvAddress = tvAddress;
-    this.tvConnected = tvConnected;
     this.tvDevice = tvDevice;
+    this.tvStatus = tvStatus;
     this.tvTenKhuTro = tvTenKhuTro;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CardView getRoot() {
     return rootView;
   }
 
@@ -93,12 +92,6 @@ public final class LayoutThemKhuTroBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imgView_icon_connected;
-      ImageView imgViewIconConnected = ViewBindings.findChildViewById(rootView, id);
-      if (imgViewIconConnected == null) {
-        break missingId;
-      }
-
       id = R.id.imgView_icon_map;
       ImageView imgViewIconMap = ViewBindings.findChildViewById(rootView, id);
       if (imgViewIconMap == null) {
@@ -111,15 +104,15 @@ public final class LayoutThemKhuTroBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_address;
-      TextView tvAddress = ViewBindings.findChildViewById(rootView, id);
-      if (tvAddress == null) {
+      id = R.id.imgView_icon_status;
+      ImageView imgViewIconStatus = ViewBindings.findChildViewById(rootView, id);
+      if (imgViewIconStatus == null) {
         break missingId;
       }
 
-      id = R.id.tv_connected;
-      TextView tvConnected = ViewBindings.findChildViewById(rootView, id);
-      if (tvConnected == null) {
+      id = R.id.tv_address;
+      TextView tvAddress = ViewBindings.findChildViewById(rootView, id);
+      if (tvAddress == null) {
         break missingId;
       }
 
@@ -129,15 +122,20 @@ public final class LayoutThemKhuTroBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_status;
+      TextView tvStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvStatus == null) {
+        break missingId;
+      }
+
       id = R.id.tv_ten_khu_tro;
       TextView tvTenKhuTro = ViewBindings.findChildViewById(rootView, id);
       if (tvTenKhuTro == null) {
         break missingId;
       }
 
-      return new LayoutThemKhuTroBinding((ConstraintLayout) rootView, imgViewBackground,
-          imgViewIconConnected, imgViewIconMap, imgViewIconSmartLock, tvAddress, tvConnected,
-          tvDevice, tvTenKhuTro);
+      return new LayoutThemKhuTroBinding((CardView) rootView, imgViewBackground, imgViewIconMap,
+          imgViewIconSmartLock, imgViewIconStatus, tvAddress, tvDevice, tvStatus, tvTenKhuTro);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2,14 +2,16 @@ package com.example.afinal.fragment_home;
 
 public class quan_ly_khu_tro_firebase {
     private String DiaChi, MaThietBi, TenKhuTro;
+    private int Connection;
 
     public quan_ly_khu_tro_firebase() {
     }
 
-    public quan_ly_khu_tro_firebase(String diaChi, String maThietBi, String tenKhuTro) {
+    public quan_ly_khu_tro_firebase(String diaChi, String maThietBi, String tenKhuTro,int connection) {
         this.DiaChi = diaChi;
         this.MaThietBi = maThietBi;
         this.TenKhuTro = tenKhuTro;
+        this.Connection = connection;
     }
 
     public String getDiaChi() {
@@ -34,5 +36,13 @@ public class quan_ly_khu_tro_firebase {
 
     public void setTenKhuTro(String tenKhuTro) {
         TenKhuTro = tenKhuTro;
+    }
+
+    public int getConnection() {
+        return Connection;
+    }
+
+    public void setConnection(int connection) {
+        Connection = connection;
     }
 }

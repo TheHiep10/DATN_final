@@ -1,12 +1,9 @@
 package com.example.afinal.room.member;
 
-import static android.provider.Settings.System.getString;
-
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.Gravity;
@@ -30,31 +27,39 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.afinal.R;
-import com.example.afinal.room.Manager;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class MemberAdapter extends FirebaseRecyclerAdapter<add_member, MemberAdapter.myViewHoler> {
 
+    private String devicecode;
+    private int statusDelete;
+    DatabaseReference dataMember;
     /**
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
      * {@link FirebaseRecyclerOptions} for configuration options.
      *
      * @param options
      */
-    public MemberAdapter(@NonNull FirebaseRecyclerOptions<add_member> options) {
+
+    public MemberAdapter(@NonNull FirebaseRecyclerOptions<add_member> options, String devicecode) {
         super(options);
+        this.devicecode = devicecode;
     }
 
     @Override
     protected void onBindViewHolder(@NonNull myViewHoler holder, int position, @NonNull add_member model) {
+        //GET INFORMATION TO FIREBASE
         String gender;
         holder.nameMember.setText(model.getNameMember());
         gender = model.getGenderMember();
@@ -70,18 +75,21 @@ public class MemberAdapter extends FirebaseRecyclerAdapter<add_member, MemberAda
         }
         holder.starttimeMember.setText(model.getTimeMember());
         holder.phoneMember.setText(model.getPhoneMember());
+        // GET DEVICE CODE
+    //MENU EDIT AND DELETE
         holder.txtoption.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Display option menu
-
                 PopupMenu popupMenu = new PopupMenu(holder.txtoption.getContext(), holder.txtoption);
                 popupMenu.inflate(R.menu.option_menu);
+                dataMember = FirebaseDatabase.getInstance().getReference("DV").child(devicecode);
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
 
                         switch (item.getItemId()){
+                        //OPTION EDIT INFOTION MEMBER
                             case R.id.menu_edit:
                                 final Dialog dialog = new Dialog(holder.txtoption.getContext());
                                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -124,6 +132,7 @@ public class MemberAdapter extends FirebaseRecyclerAdapter<add_member, MemberAda
                                 phoneUpdate.setText(model.getPhoneMember());
 
                                 dialog.show();
+                            //BUTTON UPDATE INFOMATION
                                 accepUpdate.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -138,9 +147,8 @@ public class MemberAdapter extends FirebaseRecyclerAdapter<add_member, MemberAda
                                         map.put("addressMember", addressUpdate.getText().toString());
                                         map.put("timeMember", timeUpdate.getText().toString());
                                         map.put("phoneMember",phoneUpdate.getText().toString());
-
-
-                                        FirebaseDatabase.getInstance().getReference("Dv1").child("MEMBER").child(getRef(var).getKey()).updateChildren(map)
+                                    //UPDATE INFOMATION TO FIREBASE
+                                        dataMember.child("MEMBER").child(getRef(var).getKey()).updateChildren(map)
                                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                     @Override
                                                     public void onSuccess(Void unused) {
@@ -159,16 +167,48 @@ public class MemberAdapter extends FirebaseRecyclerAdapter<add_member, MemberAda
                                     }
                                 });
                                 break;
+                            //OPTION DELETE MEMBER
                             case R.id.menu_delete:
-                                AlertDialog.Builder builder = new AlertDialog.Builder(holder.nameMember.getContext());
-                                builder.setTitle("Bạn có chắc chắn muốn xóa?");
+                                AlertDialog.Builder builder = new AlertDialog.Builder(holder.txtoption.getContext());
+                                builder.setIcon(R.drawable.icon_delete);
+                                builder.setTitle("Bạn muốn xóa thành viên?");
                                 builder.setMessage("Thông tin thành viên không thể khôi phục");
+
+                                statusDelete = 1;
                                 int var = holder.getAdapterPosition();
 
                                 builder.setPositiveButton("Xác nhận", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        FirebaseDatabase.getInstance().getReference("Dv1").child("MEMBER").child(getRef(var).getKey()).removeValue();
+                                        dataMember.child("statusDelete").setValue(statusDelete);
+                                        AlertDialog.Builder builder1 = new AlertDialog.Builder(holder.txtoption.getContext());
+                                        builder1.setIcon(R.drawable.icon_delete);
+                                        builder1.setTitle("Đang xóa thông tin thành viên");
+                                        builder1.setView(R.layout.progress_layout);
+                                        builder1.setCancelable(false);
+                                        AlertDialog dialog1 = builder1.create();
+                                        dialog1.show();
+                                        dataMember.child("statusDelete").addValueEventListener(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                Long longValue = snapshot.getValue(Long.class);
+
+                                                if (longValue != null) {
+                                                    statusDelete = longValue.intValue();
+                                                    if (statusDelete != 1)
+                                                    {
+                                                        dataMember.child("MEMBER").child(getRef(var).getKey()).removeValue();
+                                                        dialog1.dismiss();
+                                                        Toast.makeText(holder.txtoption.getContext(),"Xóa thông tin thành công", Toast.LENGTH_SHORT).show();
+                                                    }
+                                                }
+                                            }
+
+                                            @Override
+                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                            }
+                                        });
                                     }
                                 });
 
@@ -189,9 +229,10 @@ public class MemberAdapter extends FirebaseRecyclerAdapter<add_member, MemberAda
                 popupMenu.show();
             }
         });
-        holder.recCard.setOnClickListener(new View.OnClickListener() {
+        // OPEN INFORMATION MEMBER
+        holder.recCard.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onLongClick(View v) {
                 Intent intent = new Intent(holder.recCard.getContext(), DetailActivity.class);
                 intent.putExtra("Name", model.getNameMember());
                 intent.putExtra("Gender", model.getGenderMember());
@@ -200,6 +241,7 @@ public class MemberAdapter extends FirebaseRecyclerAdapter<add_member, MemberAda
                 intent.putExtra("Starttime", model.getTimeMember());
                 intent.putExtra("Phone", model.getPhoneMember());
                 holder.recCard.getContext().startActivity(intent);
+                return true;
             }
         });
     }

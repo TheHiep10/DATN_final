@@ -114,8 +114,10 @@ drawable icon_btn_off
 drawable icon_btn_on
 drawable icon_connected
 drawable icon_dangsuat
+drawable icon_delete
 drawable icon_disconnected
 drawable icon_empty_room
+drawable icon_finger
 drawable icon_hello
 drawable icon_help
 drawable icon_history
@@ -241,9 +243,9 @@ id imageView9
 id image_phone
 id imgView_background
 id imgView_background_lich_su
-id imgView_icon_connected
 id imgView_icon_map
 id imgView_icon_smart_lock
+id imgView_icon_status
 id img_btn_huy
 id img_btn_xac_nhan
 id img_icon_ra_vao
@@ -260,7 +262,6 @@ id loginContainer
 id logoFG
 id logoOTP
 id logoutIcon
-id lv_khu_tro
 id map
 id menu_delete
 id menu_edit
@@ -293,6 +294,7 @@ id rdGroup
 id recCard
 id relative
 id remmberCheck
+id rv_add_khu_tro
 id searchView
 id sex
 id starttime
@@ -302,8 +304,6 @@ id textView12
 id textView14
 id textView15
 id textView2
-id textView3
-id textView4
 id textView5
 id textView7
 id textView8
@@ -329,12 +329,14 @@ id tvOTP
 id tvPhoneNumber
 id tvUserName
 id tv_address
-id tv_connected
 id tv_date
 id tv_device
 id tv_gio_ra_vao
 id tv_name_khu_tro
 id tv_ngay_ra_vao
+id tv_soKhuTro
+id tv_status
+id tv_tenKhuTro
 id tv_ten_khach_thue
 id tv_ten_khu_tro
 id txtAddress

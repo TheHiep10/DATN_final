@@ -35,10 +35,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.FInal" >
         <activity
-            android:name="com.example.afinal.room.member.DetailActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.afinal.room.Manager"
+            android:name="com.example.afinal.login.SignInActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -69,6 +66,12 @@
             android:parentActivityName="com.example.afinal.login.SignInActivity" />
         <activity
             android:name="com.example.afinal.login.VerifyOTPActivity"
+            android:parentActivityName="com.example.afinal.login.SignInActivity" />
+        <activity
+            android:name="com.example.afinal.room.Manager"
+            android:parentActivityName="com.example.afinal.login.SignInActivity" />
+        <activity
+            android:name="com.example.afinal.room.member.DetailActivity"
             android:parentActivityName="com.example.afinal.login.SignInActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"

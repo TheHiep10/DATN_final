@@ -1,10 +1,15 @@
 package com.example.afinal.fragment_home;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -25,6 +30,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.afinal.MainActivity;
 import com.example.afinal.R;
+import com.example.afinal.room.Manager;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -38,24 +44,19 @@ import java.util.Objects;
 
 public class fragmentHome extends Fragment {
     private DatabaseReference firebase_home;
-    private TextView user_name;
+    private TextView user_name, date, soKhuTro;
+    private Button btn_add;
     private String user_id, get_phone;
     private RecyclerView recyclerView;
     private ArrayList<quan_ly_khu_tro_firebase> quan_ly_khu_tro_firebaseArrayList = new ArrayList<>();
     private quan_ly_khu_tro_adapter quan_ly_khu_tro_adapter;
-    public int count_id_khu_tro;
+    public int count_id_khu_tro, IDtemp, connection;
+    private Handler handler;
+    private static final int UPDATE_INTERVAL = 15000; // Thời gian cập nhật là 30 giây
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (savedInstanceState != null)
-        {
-            count_id_khu_tro = savedInstanceState.getInt("counter");
-        }
-        else
-        {
-            count_id_khu_tro = 1;
-        }
     }
 
     @SuppressLint("MissingInflatedId")
@@ -68,64 +69,21 @@ public class fragmentHome extends Fragment {
         // Mapping
         user_name = home_view.findViewById(R.id.welcome_username);
         user_id = home_main_activity.getUserID();
-        TextView date = home_view.findViewById(R.id.tv_date);
-        TextView soKhuTro = home_view.findViewById(R.id.tv_soKhuTro);
-        Button btn_add = home_view.findViewById(R.id.btn_add_khu_tro);
-        recyclerView = home_view.findViewById(R.id.rv_add_khu_tro);
-
-        // Code
-        if (savedInstanceState != null) {
-            count_id_khu_tro = savedInstanceState.getInt("counter");
-        } else {
-            count_id_khu_tro = 1;
-        }
-
-        firebase_home = FirebaseDatabase.getInstance().getReference();
-        String current_date = DateFormat.getDateInstance().format(Calendar.getInstance().getTime());
-        date.setText(current_date);
+        date = home_view.findViewById(R.id.tv_date);
+        soKhuTro = home_view.findViewById(R.id.tv_soKhuTro);
         btn_add = home_view.findViewById(R.id.btn_add_khu_tro);
+        recyclerView = home_view.findViewById(R.id.rv_add_khu_tro);
+        //----------------------//
+        // Khởi tạo Handler
+        handler = new Handler(Looper.getMainLooper());
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        quan_ly_khu_tro_adapter = new quan_ly_khu_tro_adapter(fragmentHome.this, quan_ly_khu_tro_firebaseArrayList);
-        recyclerView.setAdapter(quan_ly_khu_tro_adapter);
-
-        // Hàm con retrieveDataFromFirebase
-        retrieveDataFromFirebase();
-        firebase_home.child("HOME/SoKhuTro").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                soKhuTro.setText(snapshot.getValue().toString());
-                count_id_khu_tro = new Integer(snapshot.getValue().toString());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-        getUserDataByPath(user_id);
-
-
-        btn_add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                open_dialog_add_listView(Gravity.CENTER);
-            }
-        });
+        //get number of khu trọ
+        updateDataFromFirebase();
 
         return home_view;
     }
 
-    @Override
-    public void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        // Luu trang thai bien counter
-        outState.putInt("counter", count_id_khu_tro);
-    }
-
+    //Lấy dữ liệu người dùng từ Firebase
     private void getUserDataByPath(String user_id)
     {
         DatabaseReference firebase_home01 = FirebaseDatabase.getInstance().getReference("USER/PHONE");
@@ -134,17 +92,20 @@ public class fragmentHome extends Fragment {
             {
                 DataSnapshot dataSnapshot = task.getResult();
                 get_phone = String.valueOf(dataSnapshot.child("userPhone").getValue());
-                firebase_home.child("USER/PHONE").child(get_phone).child("userName").addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        user_name.setText(Objects.requireNonNull(snapshot.getValue()).toString());
-                    }
+                if (get_phone != null)
+                {
+                    firebase_home.child("USER/PHONE").child(get_phone).child("userName").addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            user_name.setText(Objects.requireNonNull(snapshot.getValue()).toString());
+                        }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
 
-                    }
-                });
+                        }
+                    });
+                }else {Log.e(TAG,"Khong nhan duoc du lieu tu firebase");}
             }
         });
     }
@@ -206,16 +167,21 @@ public class fragmentHome extends Fragment {
 
                 if (check_empty == false)
                 {
+                    connection = IDtemp = 0;
                     ma_thiet_bi = edtMaThietBi.getText().toString().trim();
                     ten_khu_tro = edtTenKhuTro.getText().toString().trim();
                     dia_chi = edtDiaChi.getText().toString().trim();
 
-                    quan_ly_khu_tro_firebase qlkt = new quan_ly_khu_tro_firebase(dia_chi, ma_thiet_bi, ten_khu_tro);
-
+                    quan_ly_khu_tro_firebase qlkt = new quan_ly_khu_tro_firebase(dia_chi, ma_thiet_bi, ten_khu_tro, connection);
 
                     count_id_khu_tro++;
+                    Log.d(TAG,"số khu trọ" + count_id_khu_tro);
+                    soKhuTro.setText(String.valueOf(count_id_khu_tro));
+                    quan_ly_khu_tro_adapter.setCountId(count_id_khu_tro);
                     firebase_home.child("HOME/SoKhuTro").setValue(count_id_khu_tro);
-                    firebase_home.child("Shelter").child("Dv" + count_id_khu_tro).setValue(qlkt);
+                    firebase_home.child("DV").child(ma_thiet_bi).setValue(qlkt);
+                    firebase_home.child("DV").child(ma_thiet_bi).child("IDtemp").setValue(IDtemp);
+                    firebase_home.child("DV").child(ma_thiet_bi).child("Connection").setValue(connection);
                     dialog.dismiss();
                 }
             }
@@ -234,7 +200,7 @@ public class fragmentHome extends Fragment {
 
     private void retrieveDataFromFirebase()
     {
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Shelter");
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("DV");
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -256,4 +222,62 @@ public class fragmentHome extends Fragment {
         });
     }
 
+    private void updateDataFromFirebase(){
+
+        // Code
+        firebase_home = FirebaseDatabase.getInstance().getReference();
+        String current_date = DateFormat.getDateInstance().format(Calendar.getInstance().getTime());
+        date.setText(current_date);
+
+        // Hàm con retrieveDataFromFirebase
+        retrieveDataFromFirebase();
+
+        //push data to quan_ly_khu_tro_Adapter.java
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        quan_ly_khu_tro_adapter = new quan_ly_khu_tro_adapter(fragmentHome.this, quan_ly_khu_tro_firebaseArrayList, count_id_khu_tro);
+        recyclerView.setAdapter(quan_ly_khu_tro_adapter);
+        firebase_home = FirebaseDatabase.getInstance().getReference();
+        firebase_home.child("HOME/SoKhuTro").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Long currentID = snapshot.getValue(Long.class);
+                if (currentID != null)
+                {
+                    count_id_khu_tro = currentID.intValue();
+                    soKhuTro.setText(String.valueOf(count_id_khu_tro));
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+        // get user_id in database
+        getUserDataByPath(user_id);
+
+
+        btn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                open_dialog_add_listView(Gravity.CENTER);
+            }
+        });
+
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                updateDataFromFirebase();
+            }
+        },UPDATE_INTERVAL);
+    }
+
+    @Override
+    public void onDestroy() {
+        // Hủy lịch trình khi Activity bị hủy
+        handler.removeCallbacksAndMessages(null);
+        super.onDestroy();
+    }
 }

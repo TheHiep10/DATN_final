@@ -1,29 +1,27 @@
 package com.example.afinal.fragment_home;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Rect;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.afinal.R;
-import com.example.afinal.login.forgotPassWord;
 import com.example.afinal.room.Manager;
-import com.example.afinal.room.member.DetailActivity;
-import com.example.afinal.room.member.add_member;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -31,9 +29,11 @@ public class quan_ly_khu_tro_adapter extends RecyclerView.Adapter<MyViewHolder> 
     private Fragment context;
     private ArrayList<quan_ly_khu_tro_firebase> quan_ly_khu_tro_firebaseArrayList;
     public int countId;
-    public quan_ly_khu_tro_adapter(Fragment context, ArrayList<quan_ly_khu_tro_firebase> quan_ly_khu_tro_firebaseArrayList) {
+    private int connected;
+    public quan_ly_khu_tro_adapter(Fragment context, ArrayList<quan_ly_khu_tro_firebase> quan_ly_khu_tro_firebaseArrayList, int countId) {
         this.context = context;
         this.quan_ly_khu_tro_firebaseArrayList = quan_ly_khu_tro_firebaseArrayList;
+        this.countId = countId;
     }
 
 
@@ -53,65 +53,90 @@ public class quan_ly_khu_tro_adapter extends RecyclerView.Adapter<MyViewHolder> 
         holder.dia_chi.setText(quanLyKhuTroFirebase.getDiaChi());
         holder.ma_thiet_bi.setText(quanLyKhuTroFirebase.getMaThietBi());
         holder.ten_khu_tro.setText(quanLyKhuTroFirebase.getTenKhuTro());
+        connected = quanLyKhuTroFirebase.getConnection();
+        if (connected == 1)
+        {
+            holder.imgStatus.setImageResource(R.drawable.icon_connected);
+            holder.status.setText("Đã kết nối");
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Tạo Intent để khởi chạy hoạt đôộng mới
-                Intent intent = new Intent(v.getContext(), Manager.class);
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Tạo Intent để khởi chạy hoạt đôộng mới
+                    Intent intent = new Intent(v.getContext(), Manager.class);
 
-                // Đặt dữ liệu cần thiết vào Intent
-                intent.putExtra("item", getItemCount());
+                    // Đặt dữ liệu cần thiết vào Intent
+                    intent.putExtra("DEVICE_CODE",quanLyKhuTroFirebase.getMaThietBi());
+                    intent.putExtra("NAME_ROOM", quanLyKhuTroFirebase.getTenKhuTro());
+                    intent.putExtra("CONNECTION", quanLyKhuTroFirebase.getConnection());
+                    // Khởi chạy hoạt động mới
+                    v.getContext().startActivities(new Intent[]{intent});
+                }
+            });
+            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    // Create a dialog builder
+                    AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
 
-                // Khởi chạy hoạt động mới
-                v.getContext().startActivities(new Intent[]{intent});
-            }
-        });
-        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                // Create a dialog builder
-                AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-
-                // Set the title and message of the dialog box
-                builder.setIcon(R.drawable.icon_delete);
-                builder.setTitle("Xóa khu trọ");
-                builder.setMessage("Bạn muốn xóa khu trọ này?");
+                    // Set the title and message of the dialog box
+                    builder.setIcon(R.drawable.icon_delete);
+                    builder.setTitle("Xóa khu trọ");
+                    builder.setMessage("Bạn muốn xóa khu trọ này?");
 
 
-                // Add a positive button to the dialog box
-                builder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Remove the item from the adapter
-                        quan_ly_khu_tro_firebaseArrayList.remove(holder.getAdapterPosition());
+                    // Add a positive button to the dialog box
+                    builder.setPositiveButton("Xác nhận", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Log.d(TAG,"Thông tin countID" + countId);
+                            // Xóa mục khỏi Firebase trước
+                            FirebaseDatabase.getInstance().getReference("DV").child(quanLyKhuTroFirebase.getMaThietBi()).removeValue()
+                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            if (task.isSuccessful()) {
+                                                // Giảm số lượng phòng xuống và push lên firebase
+                                                countId--;
+                                                Log.d(TAG, "gia trị countid sau khi giảm" + countId);
+                                                FirebaseDatabase.getInstance().getReference().child("HOME/SoKhuTro").setValue(countId);
+                                            } else {
+                                                // Xử lý khi có lỗi xảy ra trong quá trình xóa
+                                                Toast.makeText(holder.itemView.getContext(), "Xóa thất bại", Toast.LENGTH_SHORT).show();
+                                            }
+                                        }
+                                    });
+                        }
+                    }).setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            // Do nothing
+                        }
+                    });
 
-                        // Notify the adapter that the data has changed
-                        notifyItemRemoved(holder.getAdapterPosition());
 
-                        // Xóa mục khỏi Firebase
-                        FirebaseDatabase.getInstance().getReference("Shelter").child("Dv" + countId).removeValue();
-                    }
-                }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Do nothing
-                    }
-                });
+                    // Show the dialog box
+                    builder.show();
+                    return false;
+                }
+            });
+        }
+        else {
+            holder.imgStatus.setImageResource(R.drawable.icon_disconnected);
+            holder.status.setText("Chưa kết nối");
+        }
 
-                // Add a negative button to the dialog box
-
-                // Show the dialog box
-                builder.show();
-                return true;
-            }
-        });
     }
 
     @Override
     public int getItemCount() {
         return quan_ly_khu_tro_firebaseArrayList.size();
     }
+
+    public void setCountId(int countId) {
+        this.countId = countId;
+    }
+
 }
 
 class MyViewHolder extends RecyclerView.ViewHolder
@@ -124,6 +149,8 @@ class MyViewHolder extends RecyclerView.ViewHolder
         dia_chi = itemView.findViewById(R.id.tv_address);
         ma_thiet_bi = itemView.findViewById(R.id.tv_device);
         ten_khu_tro = itemView.findViewById(R.id.tv_ten_khu_tro);
+        status = itemView.findViewById(R.id.tv_status);
+        imgStatus = itemView.findViewById(R.id.imgView_icon_status);
     }
 }
 

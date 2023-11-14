@@ -6,11 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.afinal.R;
@@ -50,16 +50,10 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ImageView imageView9;
 
   @NonNull
-  public final ListView lvKhuTro;
+  public final RecyclerView rvAddKhuTro;
 
   @NonNull
   public final TextView textView;
-
-  @NonNull
-  public final TextView textView3;
-
-  @NonNull
-  public final TextView textView4;
 
   @NonNull
   public final TextView textView7;
@@ -71,15 +65,21 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView tvDate;
 
   @NonNull
+  public final TextView tvSoKhuTro;
+
+  @NonNull
+  public final TextView tvTenKhuTro;
+
+  @NonNull
   public final TextView welcomeUsername;
 
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAddKhuTro,
       @NonNull ConstraintLayout constraintLayout2, @NonNull ConstraintLayout constraintLayout3,
       @NonNull ImageView imageView, @NonNull ImageView imageView2, @NonNull ImageView imageView4,
       @NonNull ImageView imageView5, @NonNull ImageView imageView8, @NonNull ImageView imageView9,
-      @NonNull ListView lvKhuTro, @NonNull TextView textView, @NonNull TextView textView3,
-      @NonNull TextView textView4, @NonNull TextView textView7, @NonNull TextView textView8,
-      @NonNull TextView tvDate, @NonNull TextView welcomeUsername) {
+      @NonNull RecyclerView rvAddKhuTro, @NonNull TextView textView, @NonNull TextView textView7,
+      @NonNull TextView textView8, @NonNull TextView tvDate, @NonNull TextView tvSoKhuTro,
+      @NonNull TextView tvTenKhuTro, @NonNull TextView welcomeUsername) {
     this.rootView = rootView;
     this.btnAddKhuTro = btnAddKhuTro;
     this.constraintLayout2 = constraintLayout2;
@@ -90,13 +90,13 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.imageView5 = imageView5;
     this.imageView8 = imageView8;
     this.imageView9 = imageView9;
-    this.lvKhuTro = lvKhuTro;
+    this.rvAddKhuTro = rvAddKhuTro;
     this.textView = textView;
-    this.textView3 = textView3;
-    this.textView4 = textView4;
     this.textView7 = textView7;
     this.textView8 = textView8;
     this.tvDate = tvDate;
+    this.tvSoKhuTro = tvSoKhuTro;
+    this.tvTenKhuTro = tvTenKhuTro;
     this.welcomeUsername = welcomeUsername;
   }
 
@@ -181,27 +181,15 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.lv_khu_tro;
-      ListView lvKhuTro = ViewBindings.findChildViewById(rootView, id);
-      if (lvKhuTro == null) {
+      id = R.id.rv_add_khu_tro;
+      RecyclerView rvAddKhuTro = ViewBindings.findChildViewById(rootView, id);
+      if (rvAddKhuTro == null) {
         break missingId;
       }
 
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
-        break missingId;
-      }
-
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
         break missingId;
       }
 
@@ -223,6 +211,18 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_soKhuTro;
+      TextView tvSoKhuTro = ViewBindings.findChildViewById(rootView, id);
+      if (tvSoKhuTro == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_tenKhuTro;
+      TextView tvTenKhuTro = ViewBindings.findChildViewById(rootView, id);
+      if (tvTenKhuTro == null) {
+        break missingId;
+      }
+
       id = R.id.welcome_username;
       TextView welcomeUsername = ViewBindings.findChildViewById(rootView, id);
       if (welcomeUsername == null) {
@@ -231,7 +231,8 @@ public final class FragmentHomeBinding implements ViewBinding {
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, btnAddKhuTro, constraintLayout2,
           constraintLayout3, imageView, imageView2, imageView4, imageView5, imageView8, imageView9,
-          lvKhuTro, textView, textView3, textView4, textView7, textView8, tvDate, welcomeUsername);
+          rvAddKhuTro, textView, textView7, textView8, tvDate, tvSoKhuTro, tvTenKhuTro,
+          welcomeUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

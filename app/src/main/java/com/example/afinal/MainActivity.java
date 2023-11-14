@@ -1,6 +1,10 @@
 package com.example.afinal;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
@@ -13,20 +17,27 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.afinal.custom_textView.RobotoBoldTextView;
 import com.example.afinal.fragment_home.ViewPagerMainAdapter;
 import com.example.afinal.fragment_home.fragmentHistory;
+import com.example.afinal.fragment_home.fragmentHome;
 import com.example.afinal.fragment_home.fragmentSetting;
 import com.example.afinal.widget.CustomViewPager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Objects;
+
 
 public class MainActivity extends AppCompatActivity {
 
     CustomViewPager viewPager;
     BottomNavigationView bottomNavigationView;
     DatabaseReference mData;
-    private RobotoBoldTextView username;
     private View mView;
     private String _userID;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,4 +111,5 @@ public class MainActivity extends AppCompatActivity {
     public String getUserID() {
         return _userID;
     }
+
 }
