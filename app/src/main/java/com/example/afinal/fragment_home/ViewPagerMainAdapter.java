@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+import com.example.afinal.fragmentHistory.fragmentHistory;
+import com.example.afinal.fragmentSetting.fragmentSetting;
+
 public class ViewPagerMainAdapter extends FragmentStatePagerAdapter {
     public ViewPagerMainAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);

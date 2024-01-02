@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.example.afinal.custom_textView.RobotoBlackTextView
+        android:id="@+id/header_wifiChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:text="Thay đổi Wifi"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/edtWifiDevic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_name"
+            android:hint="Mã thiết bị"
+            android:inputType="text"
+            android:paddingLeft="30dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtUserWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_name"
+            android:hint="Nhập tài khoản"
+            android:inputType="textMultiLine"
+            android:paddingLeft="30dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@+id/edtWifiDevic"/>
+
+        <EditText
+            android:id="@+id/edtPassWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_name"
+            android:hint="Nhập mật khẩu"
+            android:inputType="textMultiLine"
+            android:paddingLeft="30dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@+id/edtUserWifi"/>
+
+        <Button
+            android:id="@+id/btn_acceptWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btnaccept"
+            android:layout_below="@+id/edtPassWifi"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

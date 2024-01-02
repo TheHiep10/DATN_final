@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.afinal.R;
@@ -21,15 +22,19 @@ public final class FragmentLichSuBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView imageView10;
+  public final ImageView imageHistory;
+
+  @NonNull
+  public final RecyclerView listHistory;
 
   @NonNull
   public final TextView textView2;
 
-  private FragmentLichSuBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView10,
-      @NonNull TextView textView2) {
+  private FragmentLichSuBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageHistory,
+      @NonNull RecyclerView listHistory, @NonNull TextView textView2) {
     this.rootView = rootView;
-    this.imageView10 = imageView10;
+    this.imageHistory = imageHistory;
+    this.listHistory = listHistory;
     this.textView2 = textView2;
   }
 
@@ -60,9 +65,15 @@ public final class FragmentLichSuBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.imageView10;
-      ImageView imageView10 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView10 == null) {
+      id = R.id.imageHistory;
+      ImageView imageHistory = ViewBindings.findChildViewById(rootView, id);
+      if (imageHistory == null) {
+        break missingId;
+      }
+
+      id = R.id.listHistory;
+      RecyclerView listHistory = ViewBindings.findChildViewById(rootView, id);
+      if (listHistory == null) {
         break missingId;
       }
 
@@ -72,7 +83,8 @@ public final class FragmentLichSuBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentLichSuBinding((ConstraintLayout) rootView, imageView10, textView2);
+      return new FragmentLichSuBinding((ConstraintLayout) rootView, imageHistory, listHistory,
+          textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

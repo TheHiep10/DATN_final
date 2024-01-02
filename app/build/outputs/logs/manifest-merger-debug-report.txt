@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\PC\.gradle\caches\transforms-3\9b9305d56b66af647a819456cdc68979\transformed\viewbinding-7.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\PC\.gradle\caches\transforms-3\345b546f085861901f22f0a7f831336a\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\PC\.gradle\caches\transforms-3\962755fc6f250e37f941acc142533393\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -80,27 +80,27 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\PC\.gradle\cache
 MERGED from [androidx.print:print:1.0.0] C:\Users\PC\.gradle\caches\transforms-3\d9b3288daf8487d3bc0bf6643dda537f\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\PC\.gradle\caches\transforms-3\8bf0933e27d1e74b39732ca97edd0f41\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [io.michaelrocks:libphonenumber-android:8.12.19-2] C:\Users\PC\.gradle\caches\transforms-3\428726f2bcf07df8132b5611bda2805b\transformed\libphonenumber-android-8.12.19-2\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
 	package
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:1-37:12
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:1-39:12
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\PC\.gradle\caches\transforms-3\dee3a0d43bb56784cd3f9b7b98ad1e72\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:5-67
 MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\PC\.gradle\caches\transforms-3\dee3a0d43bb56784cd3f9b7b98ad1e72\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\PC\.gradle\caches\transforms-3\b9cc3786abd0a65a4a12cf83d8430869\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
@@ -112,9 +112,9 @@ MERGED from [com.google.android.gms:play-services-maps:17.0.1] C:\Users\PC\.grad
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\PC\.gradle\caches\transforms-3\fd296218ad6ea16e36101d9897e9c7a0\transformed\firebase-storage-20.2.1\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\PC\.gradle\caches\transforms-3\fd296218ad6ea16e36101d9897e9c7a0\transformed\firebase-storage-20.2.1\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:7:5-35:19
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:7:5-37:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\PC\.gradle\caches\transforms-3\345b546f085861901f22f0a7f831336a\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\PC\.gradle\caches\transforms-3\345b546f085861901f22f0a7f831336a\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\PC\.gradle\caches\transforms-3\962755fc6f250e37f941acc142533393\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -166,103 +166,105 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\PC\.gradle\caches\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\PC\.gradle\caches\transforms-3\bd9779678ad19002f85fc23cc6b7de13\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:13:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:11:9-54
 	android:roundIcon
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:13:9-59
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:14:9-59
 	tools:targetApi
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:16:9-29
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:17:9-29
 	android:icon
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:12:9-54
 	android:allowBackup
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:16:9-43
 	android:dataExtractionRules
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:9:9-65
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:10:9-65
+	android:name
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:8:9-30
 activity#com.example.afinal.login.SignInActivity
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:17:9-24:20
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:18:9-25:20
 	android:exported
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:19:13-36
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:18:13-49
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:19:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:20:13-23:29
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:23:27-74
 activity#com.example.afinal.MainActivity
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:25:9-100
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:26:9-100
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:25:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:26:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:25:70-98
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:26:70-98
 activity#com.example.afinal.login.forgotPassWord
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:26:9-109
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:27:9-109
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:26:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:27:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:26:70-106
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:27:70-106
 activity#com.example.afinal.login.SignUp1Activity
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:27:9-110
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:28:9-110
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:27:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:28:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:27:70-107
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:28:70-107
 activity#com.example.afinal.login.SignUp2Activity
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:28:9-111
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:29:9-111
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:28:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:29:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:28:71-108
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:29:71-108
 activity#com.example.afinal.login.SignUp3Activity
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:29:9-110
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:30:9-110
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:29:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:30:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:29:70-107
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:30:70-107
 activity#com.example.afinal.login.verifyOTP
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:30:9-104
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:31:9-104
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:30:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:31:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:30:70-101
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:31:70-101
 activity#com.example.afinal.login.resetPassword
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:31:9-108
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:32:9-108
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:31:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:32:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:31:70-105
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:32:70-105
 activity#com.example.afinal.login.VerifyOTPActivity
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:32:9-112
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:33:9-112
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:32:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:33:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:32:70-109
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:33:70-109
 activity#com.example.afinal.room.Manager
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:33:9-100
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:34:9-100
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:33:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:34:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:33:70-98
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:34:70-98
 activity#com.example.afinal.room.member.DetailActivity
-ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:34:9-114
+ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:35:9-114
 	android:parentActivityName
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:34:19-69
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:35:19-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml:34:70-112
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml:35:70-112
 uses-sdk
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\PC\.gradle\caches\transforms-3\9b9305d56b66af647a819456cdc68979\transformed\viewbinding-7.3.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\PC\.gradle\caches\transforms-3\9b9305d56b66af647a819456cdc68979\transformed\viewbinding-7.3.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\PC\.gradle\caches\transforms-3\345b546f085861901f22f0a7f831336a\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
@@ -415,16 +417,16 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\PC\.gra
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\PC\.gradle\caches\transforms-3\8bf0933e27d1e74b39732ca97edd0f41\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [io.michaelrocks:libphonenumber-android:8.12.19-2] C:\Users\PC\.gradle\caches\transforms-3\428726f2bcf07df8132b5611bda2805b\transformed\libphonenumber-android-8.12.19-2\AndroidManifest.xml:5:5-7:41
 MERGED from [io.michaelrocks:libphonenumber-android:8.12.19-2] C:\Users\PC\.gradle\caches\transforms-3\428726f2bcf07df8132b5611bda2805b\transformed\libphonenumber-android-8.12.19-2\AndroidManifest.xml:5:5-7:41
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\PC\Desktop\DATN_final\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\PC\Desktop\New folder\DATN_final\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\PC\.gradle\caches\transforms-3\b9cc3786abd0a65a4a12cf83d8430869\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\PC\.gradle\caches\transforms-3\5f132f86ccc5306795f585a602b15bf8\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79

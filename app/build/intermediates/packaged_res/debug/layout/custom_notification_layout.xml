@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="360dp"
-    android:padding="3dp"
+    android:layout_width="250dp"
+    android:padding="2dp"
     android:layout_gravity="center|top"
     android:layout_margin="3dp"
-    android:background="@drawable/custom_noti_background"
-    android:layout_height="70dp">
+    android:layout_height="50dp">
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         style="@style/TextAppearance.Compat.Notification.Title"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
+        android:textColor="@color/doLamp"
         android:layout_gravity="center|start"
-        android:layout_marginLeft="30dp"
-        android:textSize="16dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp"
         android:text="@string/notification_title"/>
     <TextView
         android:id="@+id/info"
-        android:textSize="13dp"
+        android:textSize="12dp"
         android:padding="2dp"
         android:layout_below="@+id/title"
         android:layout_alignStart="@+id/title"
@@ -33,9 +32,10 @@
         android:layout_height="wrap_content"
         android:text="clock"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:layout_gravity="end|center"
         android:textColor="#222020"
-        android:textSize="15sp"/>
+        android:textSize="12sp"
+        android:layout_centerVertical="true"/>
 
 </RelativeLayout>

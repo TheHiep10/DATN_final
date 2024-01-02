@@ -4,7 +4,7 @@
             "outputFile": "com.example.afinal.app-mergeDebugResources-40:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PC\\Desktop\\DATN_final\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\PC\\Desktop\\New folder\\DATN_final\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

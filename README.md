@@ -7,4 +7,4 @@
 - Chỉnh sửa thông tin tài khoản.
 - Hiển thị licịch sử ra vào.
 - Đăng xuất khỏi tài khoản.
-### Figma: https://www.figma.com/proto/EnOGK8l9GbiF8zsSXWUd8g/Smart-Home?node-id=181-1925&starting-point-node-id=11%3A1257
+### Figma:

@@ -32,12 +32,20 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\progress_layout.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\custom_tab.xml",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\custom_tab.xml"
+        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/custom_notification_layout.xml",
+        "source": "com.example.afinal.app-main-44:/layout/custom_notification_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\changepasss_dialog.xml",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\changepasss_dialog.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\fragment_home.xml",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\custom_tab.xml",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\custom_tab.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\layout_them_khu_tro.xml",
@@ -48,12 +56,12 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\reset_password.xml"
     },
     {
-        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/progress_layout.xml",
-        "source": "com.example.afinal.app-main-44:/layout/progress_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\activity_sign_up1.xml",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\activity_sign_up1.xml"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\info_history.xml",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\info_history.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\dialog_add_member.xml",
@@ -62,6 +70,10 @@
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\fragment_lich_su.xml",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\fragment_lich_su.xml"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\wifichange_dialog.xml",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\wifichange_dialog.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\activity_maps.xml",
@@ -86,10 +98,6 @@
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\activity_sign_up2.xml",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\activity_sign_up2.xml"
-    },
-    {
-        "merged": "com.example.afinal.app-mergeDebugResources-41:/layout/layout_them_khu_tro.xml",
-        "source": "com.example.afinal.app-main-44:/layout/layout_them_khu_tro.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-mergeDebugResources-41:\\layout\\layout_lich_su_truy_cap.xml",

@@ -4,24 +4,17 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/dialog_background">
+
     <com.example.afinal.custom_textView.RobotoBlackTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        android:text="User Account Setting"
+        android:text="Chỉnh sửa tài khoản"
         android:textColor="@color/white"
-        android:background="@drawable/dialog_background_cornertop"
+        android:background="@drawable/bg_header"
         android:gravity="center"
         android:textSize="25dp"/>
 
-    <com.example.afinal.custom_textView.RobotoRegularTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:text="Hãy thay đổi những gì bạn muốn"
-        android:textColor="@color/black"
-        android:textSize="18dp" />
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"

@@ -19,6 +19,7 @@
     <string name="error_filed_phone_existed">Số đã được đăng ký</string>
     <string name="error_field_address_empty">Nhập địa chỉ</string>
     <string name="error_field_nativecountry_empty">Nhập quê quán</string>
+    <string name="error_device">Thiết bị đã tồn tại</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -37,29 +38,15 @@
     <string name="progress_message_check_internet">Pleas Wait While Check Internet</string>
     <string name="progress_message_check_phone_exist">Please Wait While Check Phone Number Existed</string>
 
-    <string name="channel_temp">channel temp</string>
-    <string name="channel_temp_description">this is channel temp</string>
-    <string name="channel_humi">channel humi</string>
-    <string name="channel_humi_description">this is channel humi</string>
-    <string name="channel_noise">channel noise</string>
-    <string name="channel_noise_description">this is channel noise</string>
-    <string name="channel_air">channel air</string>
-    <string name="channel_air_description">this is channel air</string>
-    <string name="notification_title">Over Threshold</string>
-    <string name="notification_info">temp sensor was over threshold</string>
-    <string name="channel_wash_baby">channel wash baby</string>
-    <string name="channel_baby_description">this is channel wash baby</string>
-    <string name="channel_wash_sport">channel wash sport</string>
-    <string name="channel_sport_description">this is channel wash sport</string>
-    <string name="channel_wash_cotton">channel wash cotton</string>
-    <string name="channel_cotton_description">this is channel wash cotton</string>
-    <string name="channel_wash_mix">channel wash mix</string>
-    <string name="channel_mix_description">this is channel wash mix</string>
+    <string name="channel_name">channel</string>
+    <string name="channel_description">this is channel</string>
+    <string name="notification_title">Cảnh báo bảo mật</string>
+    <string name="notification_info">Nhập sai mật khẩu nhiều lần</string>
 
 
     <!-- Notify data changed -->
-    <string name="notification_data_user_changed_success">Data Changed Successfully</string>
-    <string name="notification_no_data_user_changed">No Data Changed</string>
+    <string name="notification_data_user_changed_success">Thay đổi dữ liệu thành công</string>
+    <string name="notification_no_data_user_changed">Không có dữ liệu nào thay đổi</string>
 
     <string-array name="rangeSlider">
         <item>10</item>

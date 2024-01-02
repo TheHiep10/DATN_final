@@ -32,6 +32,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout3;
 
   @NonNull
+  public final TextView countMember;
+
+  @NonNull
   public final ImageView imageView;
 
   @NonNull
@@ -59,9 +62,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView textView7;
 
   @NonNull
-  public final TextView textView8;
-
-  @NonNull
   public final TextView tvDate;
 
   @NonNull
@@ -75,15 +75,16 @@ public final class FragmentHomeBinding implements ViewBinding {
 
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAddKhuTro,
       @NonNull ConstraintLayout constraintLayout2, @NonNull ConstraintLayout constraintLayout3,
-      @NonNull ImageView imageView, @NonNull ImageView imageView2, @NonNull ImageView imageView4,
-      @NonNull ImageView imageView5, @NonNull ImageView imageView8, @NonNull ImageView imageView9,
-      @NonNull RecyclerView rvAddKhuTro, @NonNull TextView textView, @NonNull TextView textView7,
-      @NonNull TextView textView8, @NonNull TextView tvDate, @NonNull TextView tvSoKhuTro,
+      @NonNull TextView countMember, @NonNull ImageView imageView, @NonNull ImageView imageView2,
+      @NonNull ImageView imageView4, @NonNull ImageView imageView5, @NonNull ImageView imageView8,
+      @NonNull ImageView imageView9, @NonNull RecyclerView rvAddKhuTro, @NonNull TextView textView,
+      @NonNull TextView textView7, @NonNull TextView tvDate, @NonNull TextView tvSoKhuTro,
       @NonNull TextView tvTenKhuTro, @NonNull TextView welcomeUsername) {
     this.rootView = rootView;
     this.btnAddKhuTro = btnAddKhuTro;
     this.constraintLayout2 = constraintLayout2;
     this.constraintLayout3 = constraintLayout3;
+    this.countMember = countMember;
     this.imageView = imageView;
     this.imageView2 = imageView2;
     this.imageView4 = imageView4;
@@ -93,7 +94,6 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.rvAddKhuTro = rvAddKhuTro;
     this.textView = textView;
     this.textView7 = textView7;
-    this.textView8 = textView8;
     this.tvDate = tvDate;
     this.tvSoKhuTro = tvSoKhuTro;
     this.tvTenKhuTro = tvTenKhuTro;
@@ -142,6 +142,12 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.constraintLayout3;
       ConstraintLayout constraintLayout3 = ViewBindings.findChildViewById(rootView, id);
       if (constraintLayout3 == null) {
+        break missingId;
+      }
+
+      id = R.id.countMember;
+      TextView countMember = ViewBindings.findChildViewById(rootView, id);
+      if (countMember == null) {
         break missingId;
       }
 
@@ -199,12 +205,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView8;
-      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
-      if (textView8 == null) {
-        break missingId;
-      }
-
       id = R.id.tv_date;
       TextView tvDate = ViewBindings.findChildViewById(rootView, id);
       if (tvDate == null) {
@@ -230,8 +230,8 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, btnAddKhuTro, constraintLayout2,
-          constraintLayout3, imageView, imageView2, imageView4, imageView5, imageView8, imageView9,
-          rvAddKhuTro, textView, textView7, textView8, tvDate, tvSoKhuTro, tvTenKhuTro,
+          constraintLayout3, countMember, imageView, imageView2, imageView4, imageView5, imageView8,
+          imageView9, rvAddKhuTro, textView, textView7, tvDate, tvSoKhuTro, tvTenKhuTro,
           welcomeUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);

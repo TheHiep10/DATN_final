@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -50,14 +49,11 @@ public final class InfomationMemberBinding implements ViewBinding {
   @NonNull
   public final RobotoMediumTextView texttime;
 
-  @NonNull
-  public final TextView txtOption;
-
   private InfomationMemberBinding(@NonNull CardView rootView, @NonNull ImageView icon,
       @NonNull ImageView imagePhone, @NonNull RobotoBlackTextView nameMember,
       @NonNull CardView recCard, @NonNull RelativeLayout relative, @NonNull ImageView sex,
       @NonNull RobotoMediumTextView starttime, @NonNull RobotoMediumTextView textphone,
-      @NonNull RobotoMediumTextView texttime, @NonNull TextView txtOption) {
+      @NonNull RobotoMediumTextView texttime) {
     this.rootView = rootView;
     this.icon = icon;
     this.imagePhone = imagePhone;
@@ -68,7 +64,6 @@ public final class InfomationMemberBinding implements ViewBinding {
     this.starttime = starttime;
     this.textphone = textphone;
     this.texttime = texttime;
-    this.txtOption = txtOption;
   }
 
   @Override
@@ -148,14 +143,8 @@ public final class InfomationMemberBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtOption;
-      TextView txtOption = ViewBindings.findChildViewById(rootView, id);
-      if (txtOption == null) {
-        break missingId;
-      }
-
       return new InfomationMemberBinding((CardView) rootView, icon, imagePhone, nameMember, recCard,
-          relative, sex, starttime, textphone, texttime, txtOption);
+          relative, sex, starttime, textphone, texttime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

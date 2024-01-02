@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\raw_music2.m4a.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\raw\\music2.m4a"
-    },
-    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-v24_icon_notification.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-v24\\icon_notification.png"
     },
@@ -42,10 +38,6 @@
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_back.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\icon_back.png"
-    },
-    {
-        "merged": "com.example.afinal.app-merged_res-42:/drawable_icon_finger.png.flat",
-        "source": "com.example.afinal.app-main-44:/drawable/icon_finger.png"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\layout_update_member.xml.flat",
@@ -92,12 +84,28 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\dialog_add_khu_tro_layout.xml"
     },
     {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_login.png.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\login.png"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_wifichange.png.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\icon_wifichange.png"
+    },
+    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_logout.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\icon_logout.png"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-xxxhdpi_icon_btn_add.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-xxxhdpi\\icon_btn_add.png"
+    },
+    {
+        "merged": "com.example.afinal.app-merged_res-42:/layout_custom_notification_layout.xml.flat",
+        "source": "com.example.afinal.app-main-44:/layout/custom_notification_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\layout_changepasss_dialog.xml.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\changepasss_dialog.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_txt_phone.png.flat",
@@ -108,12 +116,12 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_homelogo.png.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\homelogo.png"
-    },
-    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_logo_welcome.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\logo_welcome.png"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_homelogo.png.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\homelogo.png"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_lavender_border.xml.flat",
@@ -132,12 +140,12 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\custom_progressbar.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_group_51.png.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\group_51.png"
-    },
-    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_home.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\icon_home.png"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_group_51.png.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\group_51.png"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_btn_on.png.flat",
@@ -158,10 +166,6 @@
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_tab_background.xml.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\tab_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\raw_music3.m4a.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\raw\\music3.m4a"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_eye_open.png.flat",
@@ -228,6 +232,10 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\txt_email.png"
     },
     {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\layout_info_history.xml.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\info_history.xml"
+    },
+    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\layout_enter_otp_code.xml.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\enter_otp_code.xml"
     },
@@ -240,24 +248,24 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-xxxhdpi\\btn_xac_nhan.png"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_custom_radio_button.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\custom_radio_button.xml"
-    },
-    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-xxxhdpi_icon_room.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-xxxhdpi\\icon_room.png"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_custom_radio_button.xml.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\custom_radio_button.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_thumb.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\thumb.png"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-v24_tab_rect.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-v24\\tab_rect.xml"
-    },
-    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\layout_custom_tab.xml.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\custom_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-v24_tab_rect.xml.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-v24\\tab_rect.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-v24_icon_privateaccount.png.flat",
@@ -324,24 +332,24 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_custom_button03.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\custom_button03.xml"
-    },
-    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_round_back_language.xml.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\round_back_language.xml"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_custom_button03.xml.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\custom_button03.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-xxxhdpi_icon_in.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-xxxhdpi\\icon_in.png"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_thumb_selector.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\thumb_selector.xml"
-    },
-    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-v24_tab_selected.xml.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-v24\\tab_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_thumb_selector.xml.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\thumb_selector.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_about.png.flat",
@@ -438,6 +446,10 @@
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_changepass.png.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\icon_changepass.png"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-xxxhdpi_icon_connected.png.flat",
@@ -560,6 +572,10 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\icon_sw_on.png"
     },
     {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_logout.png.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\logout.png"
+    },
+    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-xxxhdpi_btn_xac_nhan_add.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-xxxhdpi\\btn_xac_nhan_add.png"
     },
@@ -590,6 +606,10 @@
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\layout_fragment_home.xml.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\menu_optionmenu_home.xml.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\menu\\optionmenu_home.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -668,10 +688,6 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-xxxhdpi\\small_icon.png"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\raw_music1.mp3.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\raw\\music1.mp3"
-    },
-    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_custom_checkbox.xml.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\custom_checkbox.xml"
     },
@@ -732,12 +748,20 @@
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\xml\\backup_rules.xml"
     },
     {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_de.png.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\icon_de.png"
+    },
+    {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-xxxhdpi_bacground_color_0.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-xxxhdpi\\bacground_color_0.png"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\layout_wifichange_dialog.xml.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\layout\\wifichange_dialog.xml"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\mipmap-xhdpi_ic_launcher.webp.flat",
@@ -762,6 +786,10 @@
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable-xxxhdpi_icon_notification_custom.png.flat",
         "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable-xxxhdpi\\icon_notification_custom.png"
+    },
+    {
+        "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_finger.png.flat",
+        "source": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-main-44:\\drawable\\icon_finger.png"
     },
     {
         "merged": "C:\\Users\\PC\\.gradle\\daemon\\7.4\\com.example.afinal.app-merged_res-42:\\drawable_icon_audio_mute.png.flat",

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="@color/backgroundmember">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <com.example.afinal.custom_textView.RobotoBlackTextView
+            android:id="@+id/nameMember_history"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+        <com.example.afinal.custom_textView.RobotoMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#8F00FF"
+            android:id="@+id/txtDeviceHistory"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageHistory"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <com.example.afinal.custom_textView.RobotoMediumTextView
+            android:id="@+id/timeHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/texttime"
+            android:layout_below="@+id/nameMember_history"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"/>
+
+        <com.example.afinal.custom_textView.RobotoMediumTextView
+            android:id="@+id/dayHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginStart="10dp"
+            android:textColor="@color/texttime"
+            android:layout_below="@+id/nameMember_history"
+            android:layout_toEndOf="@+id/timeHistory"
+            android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

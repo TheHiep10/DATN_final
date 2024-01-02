@@ -1,21 +1,20 @@
 package com.example.afinal.room.member;
 
-import android.widget.ImageView;
-
-public class add_member {
-    private String nameMember, genderMember, dateMember, addressMember, timeMember, phoneMember;
+public class  add_member {
+    private String nameMember, genderMember, dateMember, addressMember, timeMember, phoneMember, idMember;
 
     add_member() {
 
     }
 
-    public add_member(String nameMember, String genderMember, String dateMember, String addressMember, String timeMember, String phoneMember) {
+    public add_member(String nameMember, String genderMember, String dateMember, String addressMember, String timeMember, String phoneMember, String idMember) {
         this.nameMember = nameMember;
         this.genderMember = genderMember;
         this.dateMember = dateMember;
         this.addressMember = addressMember;
         this.timeMember = timeMember;
         this.phoneMember = phoneMember;
+        this.idMember = idMember;
     }
 
     public String getNameMember() {
@@ -64,5 +63,13 @@ public class add_member {
 
     public void setPhoneMember(String phoneMember) {
         this.phoneMember = phoneMember;
+    }
+
+    public String getIdMember() {
+        return idMember;
+    }
+
+    public void setIdMember(String idMember) {
+        this.idMember = idMember;
     }
 }
