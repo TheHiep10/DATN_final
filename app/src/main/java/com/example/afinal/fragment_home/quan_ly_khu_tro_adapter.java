@@ -58,7 +58,6 @@ public class quan_ly_khu_tro_adapter extends RecyclerView.Adapter<MyViewHolder> 
     private ArrayList<quan_ly_khu_tro_firebase> quan_ly_khu_tro_firebaseArrayList;
     public int countId, countMember;
     private int connected, action;
-    private boolean check;
     private String device;
     public quan_ly_khu_tro_adapter(Fragment context, ArrayList<quan_ly_khu_tro_firebase> quan_ly_khu_tro_firebaseArrayList, int action, int countId, int countMember) {
         this.context = context;
@@ -88,7 +87,6 @@ public class quan_ly_khu_tro_adapter extends RecyclerView.Adapter<MyViewHolder> 
         action = quanLyKhuTroFirebase.getAction();
         connected = quanLyKhuTroFirebase.getConnection();
         if ((action < 7) && (connected == 1) ) {
-            check = true;
             holder.imgStatus.setImageResource(R.drawable.icon_connected);
             holder.status.setText("Đã kết nối");
             Log.e(TAG, "So Thanh Vien khi gui = " + countMember);
@@ -105,28 +103,18 @@ public class quan_ly_khu_tro_adapter extends RecyclerView.Adapter<MyViewHolder> 
                     v.getContext().startActivities(new Intent[]{intent});
                 }
             });
-            if (quanLyKhuTroFirebase.getLock() == 1){
-                Log.e(TAG,"Gọi thông báo");
-                sendTempNotification(quanLyKhuTroFirebase.getMaThietBi());
-            }
-        } else {
-            check = false;
-            holder.imgStatus.setImageResource(R.drawable.icon_disconnected);
-            holder.status.setText("Chưa kết nối");
-        }
-        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                PopupMenu popupMenu = new PopupMenu(v.getContext(), v);
-                popupMenu.inflate(R.menu.optionmenu_home);
-                device = quanLyKhuTroFirebase.getMaThietBi();
-                firebaseHome = FirebaseDatabase.getInstance().getReference("DV").child(device);
-                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem item) {
-                        switch (item.getItemId()){
-                            case R.id.menu_pass:
-                                if (check){
+            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    PopupMenu popupMenu = new PopupMenu(v.getContext(), v);
+                    popupMenu.inflate(R.menu.optionmenu_home);
+                    device = quanLyKhuTroFirebase.getMaThietBi();
+                    firebaseHome = FirebaseDatabase.getInstance().getReference("DV").child(device);
+                    popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item) {
+                            switch (item.getItemId()){
+                                case R.id.menu_pass:
                                     final Dialog dialog = new Dialog(v.getContext());
                                     dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                                     dialog.setContentView(R.layout.changepasss_dialog);
@@ -178,11 +166,9 @@ public class quan_ly_khu_tro_adapter extends RecyclerView.Adapter<MyViewHolder> 
                                             dialog.dismiss();
                                         }
                                     });
-                                }
-                                break;
-                            // Change password Wifi
-                            case R.id.menu_wifi:
-                                if (check){
+                                    break;
+                                // Change password Wifi
+                                case R.id.menu_wifi:
                                     final Dialog dialog1 = new Dialog(v.getContext());
                                     dialog1.requestWindowFeature(Window.FEATURE_NO_TITLE);
                                     dialog1.setContentView(R.layout.wifichange_dialog);
@@ -240,12 +226,9 @@ public class quan_ly_khu_tro_adapter extends RecyclerView.Adapter<MyViewHolder> 
                                             dialog1.dismiss();
                                         }
                                     });
-                                }
-                                break;
-                            //Delete item
-                            case R.id.menu_delete:
-                                if (check)
-                                {
+                                    break;
+                                //Delete item
+                                case R.id.menu_delete:
                                     // Create a dialog builder
                                     AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
 
@@ -318,7 +301,34 @@ public class quan_ly_khu_tro_adapter extends RecyclerView.Adapter<MyViewHolder> 
                                     builder.setCancelable(false);
                                     // Show the dialog box
                                     builder.show();
-                                } else {
+                                    break;
+                            }
+                            return false;
+                        }
+                    });
+                    popupMenu.show();
+                    return true;
+                }
+            });
+            if (quanLyKhuTroFirebase.getLock() == 1){
+                Log.e(TAG,"Gọi thông báo");
+                sendTempNotification(quanLyKhuTroFirebase.getMaThietBi());
+            }
+        } else {
+            holder.imgStatus.setImageResource(R.drawable.icon_disconnected);
+            holder.status.setText("Chưa kết nối");
+            holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    PopupMenu popupMenu = new PopupMenu(v.getContext(), v);
+                    popupMenu.inflate(R.menu.optionmenu_home);
+                    device = quanLyKhuTroFirebase.getMaThietBi();
+                    firebaseHome = FirebaseDatabase.getInstance().getReference("DV").child(device);
+                    popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item) {
+                            switch (item.getItemId()){
+                                case R.id.menu_delete:
                                     firebaseHome.child("Key").addValueEventListener(new ValueEventListener() {
                                         @Override
                                         public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -371,16 +381,16 @@ public class quan_ly_khu_tro_adapter extends RecyclerView.Adapter<MyViewHolder> 
 
                                         }
                                     });
-                                }
-                                break;
+                                    break;
+                            }
+                            return false;
                         }
-                        return false;
-                    }
-                });
-                popupMenu.show();
-                return true;
-            }
-        });
+                    });
+                    popupMenu.show();
+                    return false;
+                }
+            });
+        }
     }
 
     @Override
