@@ -292,60 +292,55 @@ public class  Manager extends AppCompatActivity {
                     builder.setCancelable(false);
                     AlertDialog dialog1 = builder.create();
                     dialog1.show();
-                    if (dialog1 != null && dialog1.isShowing()){
-                        //Check ID and push ID
-                        datamember.child("IDtemp").addListenerForSingleValueEvent(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                Long currentID = snapshot.getValue(Long.class);
-                                if (currentID != null)
-                                {
-                                    ID = currentID.intValue();
-                                    checkID(ID);
-                                    Log.d(TAG, "ID được Log ra = " + ID);
-                                    map.put("idMember", String.valueOf(ID));
-                                }
+                    //Check ID and push ID
+                    datamember.child("IDtemp").addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            Long currentID = snapshot.getValue(Long.class);
+                            if (currentID != null)
+                            {
+                                ID = currentID.intValue();
+                                checkID(ID);
+                                Log.d(TAG, "ID được Log ra = " + ID);
+                                map.put("idMember", String.valueOf(ID));
                             }
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
+                        }
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
 
-                            }
-                        });
-                        //Check WaitScan (if != 1) will close dialog and push infomation member to firebase
-                        datamember.child("waitScan").addValueEventListener(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                Long currentWait = snapshot.getValue(Long.class);
-                                if (currentWait != null) {
-                                    waitScan = currentWait.intValue();
-                                    if (waitScan == 1) {
-                                        //Push info member
-                                        datamember.child("MEMBER").child(String.valueOf(ID)).setValue(map);
-                                        Toast.makeText(Manager.this, "Hoàn Thành", Toast.LENGTH_SHORT).show();
-                                        map.clear();
-                                        dialog1.dismiss();
-                                    } else if (waitScan == 2)
-                                    {
-                                        map.clear();
-                                        Toast.makeText(Manager.this, "Lỗi nhập vân tay", Toast.LENGTH_SHORT).show();
-                                        dialog1.dismiss();
-                                    }
-                                } else {
+                        }
+                    });
+                    //Check WaitScan (if != 1) will close dialog and push infomation member to firebase
+                    datamember.child("waitScan").addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            Long currentWait = snapshot.getValue(Long.class);
+                            if (currentWait != null) {
+                                waitScan = currentWait.intValue();
+                                if (waitScan == 1) {
+                                    //Push info member
+                                    datamember.child("MEMBER").child(String.valueOf(ID)).setValue(map);
+                                    Toast.makeText(Manager.this, "Hoàn Thành", Toast.LENGTH_SHORT).show();
                                     map.clear();
-                                    // Xử lý trường hợp giá trị là null
+                                    dialog1.dismiss();
+                                } else if (waitScan == 2)
+                                {
+                                    map.clear();
+                                    Toast.makeText(Manager.this, "Lỗi nhập vân tay", Toast.LENGTH_SHORT).show();
                                     dialog1.dismiss();
                                 }
-                            }
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
+                            } else {
                                 map.clear();
+                                // Xử lý trường hợp giá trị là null
                                 dialog1.dismiss();
                             }
-                        });
-                    }else {
-                        dialog1.dismiss();
-                        Toast.makeText(Manager.this, "Lỗi!", Toast.LENGTH_SHORT).show();
-                    }
+                        }
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+                            map.clear();
+                            dialog1.dismiss();
+                        }
+                    });
                 }
             }
         });
